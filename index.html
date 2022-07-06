@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практика</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Практика изученного материала #1</h1>
+        <p class="subtitle">HTML,CSS,SCSS,JS,BEM, Циклы, Arrow function, Multidimensional array, this, Switch, if ?:, Object key-value, RegExp</p>
+    </header>
+    <article>
+        <section class="section">
+            <h2 class="section__heading">Список использумых программ и их назначение</h2>
+            <ul class="section__list">
+                <li>TickTick</li>
+                <li>1Money</li>
+                <li>ZeppLife</li>
+                <li>Tinkoff Bank</li>
+            </ul>
+            <ul class="section__list">
+                <li>Отслеживание выполненных задач</li>
+                <li>Расчёт финансов</li>
+                <li>Мониторинг здоровья</li>
+                <li>Банк для хранения финансов</li>
+            </ul>
+        </section>
+        <section class="section">
+            <h2 class="section__heading">Список любимых игр</h2>
+            <h3 class="section__subheading">The Witcher 3: Wild Hunt</h3>
+            <p class="section__text">RPG-от 3-его лица <br>
+            Заслуги:Сюжет, проработанный игровой мир</p>
+            <h3 class="section__subheading">Dark Souls 3</h3>
+            <p class="section__text">RPG-от 3-его лица <br>
+            Заслуги:Лор, боевая система</p>
+            <h3 class="section__subheading">The Last Of Us</h3>
+            <p class="section__text">Шутер-от 3-его лица <br>
+            Заслуги:Сюжет, проработанный кинематограф</p>
+        </section>
+    </article>
+    <div class="functions">
+        <a href="#" onclick="callAlertGames()" class="functions__text">Выберите жанр игры</a>
+        <a href='#' onclick="callAlertRename(this)" class="functions__text" id="nameOfGame">Название игры</a>
+        <a href="#" onclick="deleteLetters()" class="functions__text">Удалить гласные буквы из section</a>
+        <a href="#" onclick="callAlert()" class="functions__text">Реализация стрелочной функции</a>
+        <button onclick="callAlertGameDeveloper()" class="functions__button" id="gameDeveloper">Выберите один из нескольких жанров</button>
+    </div>
+    <div class="arrays">
+        <p class="arrays__text">Содержимое двойного массива:</p>
+        <p class="arrays__text" id="arrayText"></p>
+        <br>
+        <p class="arrays__text">Содержимое первого массива:</p>
+        <p style="display: inline" class="arrays__text" id="arrayFirstText"></p>
+        <br>
+        <p style="display: inline" class="arrays__text">Содержимое второго массива:</p>
+        <p style="display: inline" class="arrays__text" id="arraySecondText"></p>
+        <br>
+        <p style="display: inline" class="arrays__text">Первые два элемента первого и второго массива(цикл):</p>
+        <p style="display: inline" class="arrays__text" id="arrayThirdText"></p>
+    </div>
+    <script src="app.js"></script>
+    <script src="functions.js"></script>
+</body>
+</html>
